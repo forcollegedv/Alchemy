@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алхимия - Рецепты</title>
+    <link rel="shortcut icon" href="assets/img/layout/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/data.js" defer></script>
+    <script src="js/recipes.js" defer></script>
+    <script src="js/navigation.js" defer></script>
+    <script src="js/fade-in.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header__wrapper wrapper">
+                <a href="index.html" class="logo">
+                    <img src="assets/img/layout/logo.svg" alt="logo">
+                    <p>Таверна Алхимия</p>
+                </a>
+                <nav>
+                    <a href="chronology.html">Хронология</a>
+                    <a href="recipes.html" class="active">Рецепты</a>
+                    <a href="characters.html">Персонажи</a>
+                    <a href="locations.html">Локации</a>
+                    <div id="nav-close"></div>
+                </nav>
+                <div id="nav-open"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="recipes">
+            <h2>Рецепты</h2>
+            <div class="container">
+                <div class="recipes__wrapper wrapper">
+                    <div class="recipes__list">
+                        <div class="list__category active">
+                            <h4>Алкоголь</h4>
+                            <div class="category__content" id="alcohol">
+                            </div>
+                        </div>
+                        <div class="list__category">
+                            <h4>Субстанции</h4>
+                            <div class="category__content" id="substantion">
+                            </div>
+
+                        </div>
+                        <div class="list__category">
+                            <h4>Эликсиры</h4>
+                            <div class="category__content" id="elixir">
+                            </div>
+                        </div>
+                        <div class="list__category">
+                            <h4>Отвары</h4>
+                            <div class="category__content" id="decoction">
+                            </div>
+                        </div>
+                        <div class="list__category">
+                            <h4>Масла</h4>
+                            <div class="category__content" id="oil">
+                            </div>
+                        </div>
+                        <div class="list__category">
+                            <h4>Бомбы</h4>
+                            <div class="category__content" id="bomb">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="recipes__content">
+                        <div class="recipe__main">
+                            <img src="assets/img/recipes/" alt="">
+                        </div>
+                        <p>Требуемые ингридиенты</p>
+                        <div class="ingridients">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        © 2025 Таверна Алхимия. Все права защищены.
+    </footer>
+</body>
+
+</html>

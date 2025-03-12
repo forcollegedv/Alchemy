@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алхимия - Главная</title>
+    <link rel="shortcut icon" href="assets/img/layout/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/data.js" defer></script>
+    <script src="js/hero.js" defer></script>
+    <script src="js/fade-in.js" defer></script>
+    <script src="js/slider.js" defer></script>
+    <script src="js/navigation.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header__wrapper wrapper">
+                <a href="index.html" class="logo">
+                    <img src="assets/img/layout/logo.svg" alt="logo">
+                    <p>Таверна Алхимия</p>
+                </a>
+                <nav>
+                    <a href="chronology.html">Хронология</a>
+                    <a href="recipes.html">Рецепты</a>
+                    <a href="characters.html">Персонажи</a>
+                    <a href="locations.html">Локации</a>
+                    <div id="nav-close"></div>
+                </nav>
+                <div id="nav-open"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__wrapper wrapper">
+                    <div class="fade RIGHT hero__info">
+                        <h1>Добро пожаловать в <strong>Алхимию</strong>!</h1>
+                        <p class="hero__subheading">Погрузитесь в атмосферу вселенной Ведьмака: книги, игры, персонажи и
+                            тайны ждут вас.</p>
+                        <div class="hero__buttons">
+                            <a href="recipes.html" class="button">Рецепты</a>
+                            <a href="chronology.html" class="button transparent-button">Хронология</a>
+                        </div>
+                    </div>
+                    <div class="fade LEFT hero__img">
+                        <img src="assets/img/hero/geralt.png" alt="Геральт" class="hero__item active">
+                        <img src="assets/img/hero/ciri.png" alt="Геральт" class="hero__item">
+                        <img src="assets/img/hero/yennifer.png" alt="Геральт" class="hero__item">
+                        <img src="assets/img/hero/triss.png" alt="Геральт" class="hero__item">
+                        <img src="assets/img/hero/dandelion.png" alt="Геральт" class="hero__item">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="explore">
+            <div class="container">
+                <h2 class="fade UP">Исследуйте мир</h2>
+                <div class="explore__wrapper wrapper">
+                    <div class="fade RIGHT explore__item">
+                        <img src="assets/img/layout/explore alchemy.jpg" alt="" class="explore__img">
+                        <h3>Секреты алхимии</h3>
+                        <p class="explore__subheading">Узнайте рецепты бомб, масел, эликсиров, чтобы подготовиться к
+                            любой схватке</p>
+                        <a href="recipes.html" class="explore__button button">Узнать больше</a>
+                    </div>
+                    <div class="fade LEFT explore__item">
+                        <img src="assets/img/layout/explore chronology.jpg" alt="" class="explore__img">
+                        <h3>Хронология</h3>
+                        <p class="explore__subheading">Узнайте, с чего начать погружение в мир Ведьмака, чтобы ничего не
+                            упустить</p>
+                        <a href="chronology.html" class="explore__button button">Узнать больше</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="characters">
+            <div class="container">
+                <h2 class="fade UP">Персонажи</h2>
+                <div class="characters__wrapper double wrapper">
+                    <div class="slider fade UP">
+                        <div class="slider__img">
+
+                        </div>
+                        <div class="slider__circles">
+                        </div>
+                    </div>
+                    <div class="double__info fade LEFT">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="locations">
+            <div class="container">
+                <h2 class="fade UP">Локации</h2>
+                <div class="locations__wrapper double wrapper">
+                    <div class="double__info fade RIGHT">
+
+                    </div>
+                    <div class="slider fade UP">
+                        <div class="slider__img">
+
+                        </div>
+                        <div class="slider__circles">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        © 2025 Таверна Алхимия. Все права защищены.
+    </footer>
+</body>
+
+</html>
