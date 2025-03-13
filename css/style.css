@@ -15,7 +15,9 @@
     text-decoration: none;
     list-style-type: none;
     color: #fff;
+    --main-color: #7d0000;
 }
+
 
 body,
 html {
@@ -25,6 +27,26 @@ html {
     height: 100%;
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.visual {
+    z-index: 9999;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: var(--main-color);
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.visual img {
+    width: 100%;
 }
 
 main {
@@ -87,7 +109,7 @@ strong {
 
 header {
     padding: 10px 0;
-    background-color: #7d0000;
+    background-color: var(--main-color);
 }
 
 .header__wrapper {
@@ -182,7 +204,7 @@ h1 {
     width: fit-content;
     transition: .3s;
     font-family: "Mason";
-    background-color: #7d0000;
+    background-color: var(--main-color);
     padding: 15px 45px;
     font-size: 40px;
     border-top-left-radius: 10px;
@@ -199,7 +221,7 @@ h1 {
 
 .button.transparent-button {
     background-color: transparent;
-    box-shadow: inset 0 0 0 3px #7d0000;
+    box-shadow: inset 0 0 0 3px var(--main-color);
 }
 
 .hero__img {
@@ -318,12 +340,12 @@ h3 {
     aspect-ratio: 1;
     height: 25px;
     border-radius: 100%;
-    box-shadow: inset #7d0000 0 0 0 2px;
+    box-shadow: inset var(--main-color) 0 0 0 2px;
     transition: .3s;
 }
 
 .circle.active {
-    background-color: #7d0000;
+    background-color: var(--main-color);
 }
 
 .double__info {
@@ -368,7 +390,7 @@ h3 {
 
 
 footer {
-    background-color: #7d0000;
+    background-color: var(--main-color);
     padding: 10px;
     text-align: center;
     font-size: 28px;
@@ -472,7 +494,7 @@ h5 {
 
 .chronology li::before {
     z-index: 0;
-    background-color: #7d0000;
+    background-color: var(--main-color);
     width: 100%;
     position: absolute;
     content: "";
@@ -488,7 +510,7 @@ ul {
 
 ul::before {
     z-index: 0;
-    background-color: #7d0000;
+    background-color: var(--main-color);
     width: 6px;
     height: calc(100% - 370px);
     position: absolute;
@@ -505,7 +527,7 @@ ul::before {
     overflow: hidden;
     max-width: 350px;
     z-index: 2;
-    background-color: #7d0000;
+    background-color: var(--main-color);
 }
 
 .chronology__img {
@@ -518,7 +540,7 @@ ul::before {
     z-index: 2;
     aspect-ratio: 1;
     height: 70px;
-    background-color: #7d0000;
+    background-color: var(--main-color);
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -605,7 +627,7 @@ ul::before {
     bottom: 0;
     left: 0;
     height: 2px;
-    background-color: #7d0000;
+    background-color: var(--main-color);
 }
 
 .recipes__item img {
@@ -633,7 +655,8 @@ ul::before {
     flex-direction: column;
     padding: 25px;
 }
-.recipes__content p{
+
+.recipes__content p {
     text-align: center;
     text-transform: uppercase;
     margin: 10px 0 15px;
@@ -661,19 +684,20 @@ ul::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #7d000029;
-    box-shadow: #7D0000 inset 0 0 0 4px;
+    background-color: var(--main-color)29;
+    box-shadow: var(--main-color) inset 0 0 0 4px;
 }
 
-.ingridients{
+.ingridients {
     justify-content: center;
     width: 80%;
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(auto-fit,75px);
+    grid-template-columns: repeat(auto-fit, 75px);
     align-items: center;
 }
-.ingridient{
+
+.ingridient {
     box-shadow: inset #333 0 0 0 2px;
     position: relative;
     aspect-ratio: 1;
@@ -682,7 +706,8 @@ ul::before {
     align-items: center;
     justify-content: center;
 }
-.ingridient__count{
+
+.ingridient__count {
     position: absolute;
     bottom: 5px !important;
     right: 5px !important;
@@ -713,7 +738,7 @@ ul::before {
 
 *::-webkit-scrollbar-thumb {
     border-radius: 0px;
-    background-color: #7D0000;
+    background-color: var(--main-color);
 }
 
 *::-webkit-scrollbar-thumb:hover {
@@ -758,7 +783,7 @@ ul::before {
         z-index: 999;
         width: 100%;
         height: 100%;
-        background-color: #7d0000;
+        background-color: var(--main-color);
     }
 
     nav:not(.active) {
@@ -835,16 +860,17 @@ ul::before {
 
 @media screen and (max-width:920px) {
 
-    .recipes__wrapper{
+    .recipes__wrapper {
         flex-direction: column-reverse;
     }
-    .recipes__list{
+
+    .recipes__list {
         overflow: auto;
         width: 100%;
         max-width: 100%;
         height: fit-content;
     }
-    
+
     ul::before,
     .chronology li::before {
         display: none;
@@ -875,16 +901,16 @@ ul::before {
 }
 
 @media screen and (max-width:500px) {
-    .recipes__content p{
+    .recipes__content p {
         font-size: 30px;
     }
 
-    
+
     .logo p {
         display: none;
     }
 
-    .recipes__name{
+    .recipes__name {
         font-size: 24px;
     }
 
